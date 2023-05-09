@@ -8,8 +8,8 @@ public class Person {
     Person(){
         System.out.println("No argument constructor");
     }
-    Person(String personName){
-        name=personName;
+    Person(String name){
+        this.name=name;
         System.out.println("1 argument constructor");
     }
 }

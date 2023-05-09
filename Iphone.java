@@ -1,5 +1,7 @@
 package class17;
 
+import javax.imageio.stream.ImageInputStream;
+
 public class Iphone {
     String make;
     String model;
@@ -11,6 +13,14 @@ public class Iphone {
         this.model = model;
         this.storage = storage;
         this.price = price;
+
+        }
+    void mobile(){
+        System.out.println(make+" "+model+" "+storage+" "+price);
     }
-}
+    public static void main(String[] args) {
+        Iphone phone=new Iphone("USA","new",64,898.90);
+        phone.mobile();
+    }
+    }
 
